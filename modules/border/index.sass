@@ -1,0 +1,23 @@
+@use "sass:list"
+@use "sass:map"
+
+@import "../../variables/index.sass"
+
+// HelperCSS Border
+
+.border-none
+  border: 0
+  
+$colors : ('navy':$color-navy)
+$border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'outset'
+
+@for $i from 1 through $border-width-count
+  .border\:#{$i}\:hidden
+    border-width: #{$i}px
+    border-style: hidden
+
+@for $i from 1 through $border-width-count
+    @each $color , $code in $colors
+      @each $type in $border-types
+        .border\:#{$i}\:#{$color}\:#{$type}
+          border: #{$i}px #{$type} #{$code}
