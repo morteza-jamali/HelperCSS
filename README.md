@@ -13,9 +13,9 @@
 
 **HelperCSS** is a class based CSS library that provide a good way for styling elements using class .
 
-<div align="center" style="padding-top:60px;padding-bottom:30px">
-<div style="width:100px;height:100px;background-color:red;border-top-left-radius:50%;border-bottom-right-radius:50%;border:2px solid blue;padding-top:35px;color:white;border-top:0">Hello</div>
-</div>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/Capture.png" alt="HelperCSS">
+</h1>
 
 I want to create top element using Bootstrap class and CSS styles
 ```html
@@ -35,6 +35,9 @@ Oops! . I have many class and css styles in here that can confuse me . So , i us
 
 That's pretty cool !
 
+<h4>
+  Contents
+</h4>
 
 - [Install](#install)
 - [Usage](#usage)

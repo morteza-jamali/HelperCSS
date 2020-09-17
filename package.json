@@ -1,8 +1,7 @@
 {
-  "name": "HelperCSS",
+  "name": "@morteza-jamali/helpercss",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "HelperCSS is a pretty cool class based css library !",
   "scripts": {
     "build" : "node_modules\\.bin\\sass src\\HelperCSS.sass css\\HelperCSS.css" ,
     "build:watch" : "npm run build -- --watch"
@@ -11,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/morteza-jamali/HelperCSS.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["sass" , "css" , "class based" , "css helper" , "library"],
+  "author": "Morteza Jamali",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/morteza-jamali/HelperCSS/issues"
