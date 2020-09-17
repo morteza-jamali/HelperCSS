@@ -14,7 +14,7 @@ Color class is like this :
 for example :
 
 <h6 align="center">
-  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/redlink.png" alt="First Link" />
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/redlink.PNG" alt="First Link" />
 </h6>
 
 ```html
@@ -22,7 +22,7 @@ for example :
 ```
 
 <h6 align="center">
-  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/bgyellowlink.png" alt="Second Link" />
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/bgyellowlink.PNG" alt="Second Link" />
 </h6>
 
 ```html
@@ -30,7 +30,7 @@ for example :
 ```
 
 <h6 align="center">
-  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/bgfglink.png" alt="Third Link" />
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/bgfglink.PNG" alt="Third Link" />
 </h6>
 
 ```html

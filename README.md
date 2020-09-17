@@ -14,7 +14,7 @@
 **HelperCSS** is a class based CSS library that provide a good way for styling elements using class .
 
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/Capture.png" alt="HelperCSS">
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/Capture.PNG" alt="HelperCSS">
 </h1>
 
 I want to create top element using Bootstrap class and CSS styles
