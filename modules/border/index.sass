@@ -29,6 +29,21 @@ $border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'out
               border-#{$ss}-width: #{$i}px !important
               border-#{$ss}-style: #{$type} !important 
 
+@for $i from 2 through $border-radius-x-count
+  .border-radius\:#{$i}x
+    +border-radius("#{$i}x")
+  @each $c , $cc in $corners
+    .border-radius\:#{$c}\:#{$i}x
+      +border-radius("#{$c}:#{$i}x")
+    @each $c1 , $cc1 in $corners
+      @if $c != $c1
+        .border-radius\:#{$c}\:#{$c1}\:#{$i}x
+          +border-radius("#{$c}:#{$c1}:#{$i}x")
+        @each $c2 , $cc2 in $corners
+          @if $c1 != $c2 and $c != $c2
+            .border-radius\:#{$c}\:#{$c1}\:#{$c2}\:#{$i}x
+              +border-radius("#{$c}:#{$c1}:#{$c2}:#{$i}x")
+
 .border-radius
   +border-radius()
 
