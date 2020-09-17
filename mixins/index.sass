@@ -12,7 +12,7 @@
 // Border radius
 =border-radius($s : '')
   $list : str-split($s , ':')
-  $x : 1
+  $x : '1'
   $empty : true
   @if string.index(list.nth($list , -1) , 'x') != null and string.index(list.nth($list , -1) , 'x') > 0
     $x : list.nth(str-split(list.nth($list , -1) , 'x') , 1)
