@@ -1,18 +1,5 @@
-/* Error: Undefined operation "2 * 0.25rem".
- *    ,
- * 22 |       border-#{$cc}-radius: #{$x * $radius} !important
- *    |                               ^^^^^^^^^^^^
- *    '
- *   mixins\index.sass 22:31  border-radius()
- *   src\helpercss.sass 8:3   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Undefined operation "2 * 0.25rem".\a    \2577 \a 22 \2502        border-#{$cc}-radius: #{$x * $radius} !important\d\a    \2502                                ^^^^^^^^^^^^\a    \2575 \a   mixins\\index.sass 22:31  border-radius()\a   src\\helpercss.sass 8:3   root stylesheet';
+.myClass {
+  border-radius: 2.5rem !important;
 }
+
+/*# sourceMappingURL=HelperCSS.css.map */

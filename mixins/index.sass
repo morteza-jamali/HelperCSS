@@ -19,10 +19,10 @@
     $x : #{$x}
   @each $c , $cc in $corners
     @if string.index($s , "#{$c}") != null and string.index($s , "#{$c}") > 0
-      border-#{$cc}-radius: $x * $radius !important
+      border-#{$cc}-radius: str-to-number($x) * $radius !important
       $empty : false
   @if $empty
-    border-radius: $radius * $x !important
+    border-radius: str-to-number($x) * $radius !important
 
 // Color
 =color($s)
