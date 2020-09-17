@@ -1,0 +1,54 @@
+@use "sass:list"
+@use "sass:map"
+@use "sass:string"
+
+@import "../variables/index"
+@import "../functions/index"
+
+// Vertical align
+=v-align($s)
+    vertical-align: #{$s} !important
+
+// Border radius
+=border-radius($s : '')
+  $list : str-split($s , ':')
+  $x : 1
+  $empty : true
+  @if string.index(list.nth($list , -1) , 'x') != null and string.index(list.nth($list , -1) , 'x') > 0
+    $x : list.nth(str-split(list.nth($list , -1) , 'x') , 1)
+    $x : #{$x}
+  @each $c , $cc in $corners
+    @if string.index($s , "#{$c}") != null and string.index($s , "#{$c}") > 0
+      border-#{$cc}-radius: $x * $radius !important
+      $empty : false
+  @if $empty
+    border-radius: $radius * $x !important
+
+// Color
+=color($s)
+    $list : str-split($s)
+    $c : map.get($colors-map , list.nth($list , 2))
+    $fb : list.nth($list , 1)
+    @if $fb == 'f'
+        color: #{$c} !important
+    @else if $fb == 'b'
+        background-color: #{$c} !important
+
+=border($s)
+    $list : str-split($s , ':')
+    $prop : 'border'
+    $ss : ''
+    $w : ''
+    $c : ''
+    $t : ''
+    @if list.nth($list , 1) != 'null'
+        $ss : list.nth($list , 1)
+        $prop : "#{$prop}-#{$ss}"
+    @if list.nth($list , 2) != 'null'
+        $w : list.nth($list , 2)
+        $w : "#{$w}px"
+    @if list.nth($list , 3) != 'null'
+        $c : list.nth($list , 3)
+    @if list.nth($list , 4) != 'null'
+        $t : list.nth($list , 4)
+    #{$prop}: #{$w} #{$c} #{$t} !important

@@ -1,4 +1,4 @@
-@import "../../variables/index.sass"
+@import "../../mixins/index"
     
 // These colors are used from Colors.css library
 // https://clrs.cc/
@@ -6,73 +6,8 @@
 // HelperCSS Color
 
 // Frontend colors
-.color\:f\:navy
-    color: $color-navy
-.color\:f\:blue
-    color: $color-blue
-.color\:f\:aqua
-    color: $color-aqua
-.color\:f\:teal
-    color: $color-teal
-.color\:f\:glive
-    color: $color-glive
-.color\:f\:green
-    color: $color-green
-.color\:f\:lime
-    color: $color-lime
-.color\:f\:yellow
-    color: $color-yellow
-.color\:f\:orange
-    color: $color-orange
-.color\:f\:red
-    color: $color-red
-.color\:f\:maroon
-    color: $color-maroon
-.color\:f\:fuchsia
-    color: $color-fuchsia
-.color\:f\:purple
-    color: $color-purple
-.color\:f\:black
-    color: $color-black
-.color\:f\:gray
-    color: $color-gray
-.color\:f\:silver
-    color: $color-silver
-.color\:f\:white
-    color: $color-white
-
-// Backend colors
-.color\:b\:navy
-    background-color: $color-navy
-.color\:b\:blue
-    background-color: $color-blue
-.color\:b\:aqua
-    background-color: $color-aqua
-.color\:b\:teal
-    background-color: $color-teal
-.color\:b\:glive
-    background-color: $color-glive
-.color\:b\:green
-    background-color: $color-green
-.color\:b\:lime
-    background-color: $color-lime
-.color\:b\:yellow
-    background-color: $color-yellow
-.color\:b\:orange
-    background-color: $color-orange
-.color\:b\:red
-    background-color: $color-red
-.color\:b\:maroon
-    background-color: $color-maroon
-.color\:b\:fuchsia
-    background-color: $color-fuchsia
-.color\:b\:purple
-    background-color: $color-purple
-.color\:b\:black
-    background-color: $color-black
-.color\:b\:gray
-    background-color: $color-gray
-.color\:b\:silver
-    background-color: $color-silver
-.color\:b\:white
-    background-color: $color-white
+@each $color , $code in $colors-map
+    .color\:f\:#{$color}
+        +color("f:#{$color}")
+    .color\:b\:#{$color}
+        +color("b:#{$color}")

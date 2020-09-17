@@ -1,7 +1,7 @@
-@import "../../variables/index.sass"
+@import "../../variables/index"
 
 // HelperCSS Align
 
 @each $a in $align
   .align-#{$a}
-    vertical-align: #{$a}
+    +v-align($a)

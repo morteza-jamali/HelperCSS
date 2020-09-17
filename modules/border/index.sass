@@ -1,23 +1,42 @@
-@use "sass:list"
-@use "sass:map"
-
-@import "../../variables/index.sass"
+@import "../../mixins/index.sass"
 
 // HelperCSS Border
+$border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'outset' 'hidden'
 
-.border-none
-  border: 0
-  
-$colors : ('navy':$color-navy)
-$border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'outset'
-
-@for $i from 1 through $border-width-count
-  .border\:#{$i}\:hidden
-    border-width: #{$i}px
-    border-style: hidden
-
-@for $i from 1 through $border-width-count
-    @each $color , $code in $colors
+@for $i from 0 through $border-width-count
+  @if $i == 0
+    .border\:#{$i}
+      +border("null:#{$i}:null:null")
+    @each $s , $ss in $sides
+      .border\:#{$s}\:#{$i}
+        +border("#{$ss}:#{$i}:null:null")
+  @else 
+    @each $color , $code in $colors-map
       @each $type in $border-types
-        .border\:#{$i}\:#{$color}\:#{$type}
-          border: #{$i}px #{$type} #{$code}
+        @if $type != 'hidden'
+            .border\:#{$i}\:#{$color}\:#{$type}
+              +border("null:#{$i}:#{$code}:#{$type}")
+        @else 
+          .border\:#{$i}\:#{$type}
+            border-width: #{$i}px !important
+            border-style: #{$type} !important 
+        @each $s , $ss in $sides
+          @if $type != 'hidden'
+            .border\:#{$s}\:#{$i}\:#{$color}\:#{$type}
+              +border("#{$ss}:#{$i}:#{$code}:#{$type}")
+          @else 
+            .border\:#{$s}\:#{$i}\:#{$type}
+              border-#{$ss}-width: #{$i}px !important
+              border-#{$ss}-style: #{$type} !important 
+
+
+/* .border-radius
+  border-radius: $radius !important
+  .border-radius\:tl
+    @include border-radius('tl')
+  .border-radius\:tr
+    border-top-right-radius: $radius !important
+  .border-radius\:bl
+    border-bottom-left-radius: $radius !important
+  .border-radius\:br
+    border-bottom-right-radius: $radius !important
