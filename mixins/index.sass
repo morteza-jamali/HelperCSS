@@ -11,19 +11,28 @@
 
 // Border radius
 =border-radius($s : '')
-  $list : str-split($s , ':')
-  $x : '1'
-  $empty : true
-  @if string.index(list.nth($list , -1) , 'x') != null and string.index(list.nth($list , -1) , 'x') > 0
-    $x : list.nth(str-split(list.nth($list , -1) , 'x') , 1)
-    $x : #{$x}
-  @each $c , $cc in $corners
-    @if string.index($s , "#{$c}") != null and string.index($s , "#{$c}") > 0
-      border-#{$cc}-radius: str-to-number($x) * $radius !important
-      $empty : false
-  @if $empty
-    border-radius: str-to-number($x) * $radius !important
-
+  $list : get-arguments($s)
+  $response : $radius
+  $has_unit : true
+  $has_corner : false
+  @if $list != false
+    $last_arg : list.nth($list , -1)
+    @each $c , $cc in $corners
+      @if $c == $last_arg
+        $has_unit : false
+    @if $has_unit
+      $units : get-units($last_arg)
+      @if $units == 'x'
+        $response : str-to-number($last_arg) * $radius
+      @else 
+        $response : #{$last_arg}
+    @each $c , $cc in $corners
+      @if str-has($s , "#{$c}")
+        $has_corner : true
+        border-#{$cc}-radius: $response !important
+  @if $list == false or $has_corner == false
+    border-radius: $response !important
+  
 // Color
 =color($s)
     $list : str-split($s)

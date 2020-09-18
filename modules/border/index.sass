@@ -29,6 +29,7 @@ $border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'out
               border-#{$ss}-width: #{$i}px !important
               border-#{$ss}-style: #{$type} !important 
 
+// From 2 to $border-radius-x-count radius
 @for $i from 2 through $border-radius-x-count
   .border-radius\:#{$i}x
     +border-radius("#{$i}x")
@@ -44,6 +45,7 @@ $border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'out
             .border-radius\:#{$c}\:#{$c1}\:#{$c2}\:#{$i}x
               +border-radius("#{$c}:#{$c1}:#{$c2}:#{$i}x")
 
+// Default Border Radius
 .border-radius
   +border-radius()
 
@@ -58,3 +60,35 @@ $border-types : 'dotted' 'dashed' 'solid' 'double' 'groove' 'ridge' 'inset' 'out
         @if $c1 != $c2 and $c != $c2
           .border-radius\:#{$c}\:#{$c1}\:#{$c2}
             +border-radius("#{$c}:#{$c1}:#{$c2}")
+
+// Pill Border Radius
+.border-radius\:pill
+  +border-radius('200x')
+
+@each $c , $cc in $corners
+  .border-radius\:#{$c}\:pill
+    +border-radius("#{$c}:200x")
+  @each $c1 , $cc1 in $corners
+    @if $c != $c1
+      .border-radius\:#{$c}\:#{$c1}\:pill
+        +border-radius("#{$c}:#{$c1}:200x")
+      @each $c2 , $cc2 in $corners
+        @if $c1 != $c2 and $c != $c2
+          .border-radius\:#{$c}\:#{$c1}\:#{$c2}\:pill
+            +border-radius("#{$c}:#{$c1}:#{$c2}:200x")
+
+// Circle Border Radius
+.border-radius\:circle
+  +border-radius('50%')
+
+@each $c , $cc in $corners
+  .border-radius\:#{$c}\:circle
+    +border-radius("#{$c}:50%")
+  @each $c1 , $cc1 in $corners
+    @if $c != $c1
+      .border-radius\:#{$c}\:#{$c1}\:circle
+        +border-radius("#{$c}:#{$c1}:50%")
+      @each $c2 , $cc2 in $corners
+        @if $c1 != $c2 and $c != $c2
+          .border-radius\:#{$c}\:#{$c1}\:#{$c2}\:circle
+            +border-radius("#{$c}:#{$c1}:#{$c2}:50%")

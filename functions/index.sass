@@ -1,3 +1,5 @@
+@use "sass:string"
+  
 // Convert String to List
 @function str-split($string, $separator)
     // empty array/list
@@ -35,10 +37,35 @@
     $index: index($strings, $character)
 
     @if not $index
-      @warn "Unknown character `#{$character}`."
-      @return false
-
-    $number: nth($numbers, $index)
-    $result: $result * 10 + $number
+      // Do nothing
+    @else 
+      $number: nth($numbers, $index)
+      $result: $result * 10 + $number
 
   @return $result
+
+// Check if string has subject string
+@function str-has($string , $subject)
+  @if string.length($string) != 0 and string.index($string , $subject) != null and string.index($string , $subject) > 0
+    @return true
+  
+  @return false
+
+// Convert argument string to array
+@function get-arguments($string , $seprator : ':')
+  @if string.length($string) != 0
+    @return str-split($string , $seprator)
+
+  @return false
+
+// Replace strings
+@function str-replace($string, $search, $replace : '')
+  $index: str-index($string, $search)
+  @if $index
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace)
+  @return $string
+
+// Remove number from a value and return units
+@function get-units($number)
+  $value : str-to-number($number)
+  @return str-replace("#{$number}" , "#{$value}")

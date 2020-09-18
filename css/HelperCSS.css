@@ -32588,4 +32588,452 @@
   border-bottom-right-radius: 0.25rem !important;
 }
 
+.border-radius\:pill {
+  border-radius: 50rem !important;
+}
+
+.border-radius\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+}
+
+.border-radius\:tl\:tr\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+}
+
+.border-radius\:tl\:tr\:bl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tl\:tr\:br\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tl\:bl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tl\:bl\:tr\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tl\:bl\:br\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tl\:br\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tl\:br\:tr\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tl\:br\:bl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:pill {
+  border-top-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:tl\:bl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tr\:tl\:br\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:bl\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tr\:bl\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:tr\:bl\:br\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:br\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:br\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:tr\:br\:bl\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:bl\:pill {
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tl\:tr\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tl\:br\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tr\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tr\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.border-radius\:bl\:tr\:br\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:bl\:br\:pill {
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:bl\:br\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:bl\:br\:tr\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:pill {
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tl\:tr\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tl\:bl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tr\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tr\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:tr\:bl\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:bl\:pill {
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:bl\:tl\:pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:br\:bl\:tr\:pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.border-radius\:circle {
+  border-radius: 50% !important;
+}
+
+.border-radius\:tl\:circle {
+  border-top-left-radius: 50% !important;
+}
+
+.border-radius\:tl\:tr\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
+.border-radius\:tl\:tr\:bl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tl\:tr\:br\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tl\:bl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tl\:bl\:tr\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tl\:bl\:br\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tl\:br\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tl\:br\:tr\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tl\:br\:bl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:circle {
+  border-top-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:tl\:bl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tr\:tl\:br\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:bl\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tr\:bl\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:tr\:bl\:br\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:br\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:br\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:tr\:br\:bl\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:bl\:circle {
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:bl\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:bl\:tl\:tr\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:bl\:tl\:br\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:bl\:tr\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:bl\:tr\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-radius\:bl\:tr\:br\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:bl\:br\:circle {
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:bl\:br\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:bl\:br\:tr\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:circle {
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tl\:tr\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tl\:bl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tr\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tr\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:tr\:bl\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:bl\:circle {
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:bl\:tl\:circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-radius\:br\:bl\:tr\:circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
 /*# sourceMappingURL=HelperCSS.css.map */

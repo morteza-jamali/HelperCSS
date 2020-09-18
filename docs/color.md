@@ -40,5 +40,5 @@ for example :
 colors names are listed below :
 
 <h6 align="center">
-  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/colors_table.png" alt="Third Link" />
+  <img src="https://raw.githubusercontent.com/morteza-jamali/HelperCSS/master/docs/assets/colors_table.PNG" alt="Third Link" />
 </h6>
