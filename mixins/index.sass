@@ -7,7 +7,7 @@
 
 // Vertical align
 =v-align($s)
-    vertical-align: #{$s} !important
+  vertical-align: #{$s} !important
 
 // Border radius
 =border-radius($s : '')
@@ -35,29 +35,46 @@
   
 // Color
 =color($s)
-    $list : str-split($s)
-    $c : map.get($colors-map , list.nth($list , 2))
-    $fb : list.nth($list , 1)
-    @if $fb == 'f'
-        color: #{$c} !important
-    @else if $fb == 'b'
-        background-color: #{$c} !important
+  $list : str-split($s)
+  $c : map.get($colors-map , list.nth($list , 2))
+  $fb : list.nth($list , 1)
+  @if $fb == 'f'
+      color: #{$c} !important
+  @else if $fb == 'b'
+      background-color: #{$c} !important
 
-=border($s)
-    $list : str-split($s , ':')
-    $prop : 'border'
-    $ss : ''
-    $w : ''
-    $c : ''
-    $t : ''
-    @if list.nth($list , 1) != 'null'
-        $ss : list.nth($list , 1)
-        $prop : "#{$prop}-#{$ss}"
-    @if list.nth($list , 2) != 'null'
-        $w : list.nth($list , 2)
-        $w : "#{$w}px"
-    @if list.nth($list , 3) != 'null'
-        $c : list.nth($list , 3)
-    @if list.nth($list , 4) != 'null'
-        $t : list.nth($list , 4)
-    #{$prop}: #{$w} #{$c} #{$t} !important
+=border($s : '')
+  $list : get-arguments($s)
+  $type : $border-style
+  $width : $border-width
+  $color : $color-gray
+  $has_unit : true
+  $has_side : false
+  @if $list != false
+    $last_arg : list.nth($list , -1)
+    @each $c , $cc in $colors-map
+      @if $c == $last_arg
+        $has_unit : false
+    @each $c in $border-styles
+      @if $c == $last_arg
+        $has_unit : false
+    @each $c , $cc in $sides
+      @if $c == $last_arg
+        $has_unit : false
+    @if $has_unit
+      $width : #{$last_arg}
+      $units : get-units($last_arg)
+      @if $units == 'x'
+        $width : str-to-number($last_arg) * $border-width
+    @each $style in $border-styles
+      @if str-has($s , $style)
+        $type : #{$style}
+    @each $color-name , $color-value in $colors-map
+      @if str-has($s , $color-name)
+        $color : $color-value
+    @each $c , $cc in $sides
+      @if str-has($s , $c)
+        $has_side : true
+        border-#{$cc}: $width $type $color !important
+  @if $list == false or $has_side == false 
+    border: $width $type $color

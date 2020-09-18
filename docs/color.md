@@ -2,9 +2,9 @@
 
 Color class is like this :
 
-<h6 align="center">
+```css
 .color-{side}-{name}
-</h6>
+```
 
 `{side}` can be `{b}` for background or `{f}` for foreground
 
